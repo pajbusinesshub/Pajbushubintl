@@ -1,0 +1,197 @@
+/* Basic Reset & Body Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Header & Navigation */
+header {
+    background: #2c3e50; /* Dark blue/grey */
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: 5px solid #2980b9; /* Bright blue accent */
+}
+
+header .logo {
+    float: left;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+header nav {
+    float: right;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #ecf0f1; /* Lighter grey */
+}
+
+/* Hero Section */
+.hero {
+    background: #34495e; /* Slightly lighter dark blue */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #2980b9; /* Bright blue */
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #3498db; /* Lighter blue */
+}
+
+/* General Section Styling */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+section:nth-child(even) {
+    background-color: #ecf0f1; /* Light grey for alternating sections */
+}
+
+section h3 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Offerings Grid */
+.offering-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.offering-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.offering-item h4 {
+    color: #2980b9;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Goals List */
+.goals ul {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.goals li {
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-left: 5px solid #2980b9;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    font-size: 1.1rem;
+}
+
+/* Contact Section */
+.contact p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* Responsive Design (Basic) */
+@media (max-width: 768px) {
+    header .logo,
+    header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .offering-grid {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+}
